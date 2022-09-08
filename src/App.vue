@@ -1,19 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <TaskList v-if="!formsShow" ></TaskList>
+    <button v-on:click="formsShow=true"> Criar nova Task</button>
+    <div class="mostrarformulario" v-if="formsShow">
+      <TaskForm></TaskForm>
+    </div>
   </div>
+ 
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+
+import TaskList from "./components/TaskList.vue"
+import TaskForm from "./components/TaskForm.vue"
+
+
+
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
-  },
-};
+    TaskList,
+    TaskForm,
+},
+data: function(){
+  return{
+    formsShow: false,
+}
+}}
+
 </script>
 
 <style>
@@ -25,4 +40,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+
 </style>
