@@ -101,34 +101,61 @@ created(){
    
 }
   .tasks{
+    margin-top: 10%;
+    padding: 1%;
+    width: 50%;
+    filter: drop-shadow(17px 26px 21px #321450);
+    background-color: #29132e;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    background-color: #d8dcba;
   }
 
   .card{
-    margin: 20px;
-    background-color: #a4a883;
+    margin: 2px;
+    background-color: #eeaecc;
     width: 90%;
-
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s;
+    letter-spacing: 4px;
+   
   }
+ 
 
   span{
-    background-color: bisque;
+    background-color: rgb(60, 216, 227);
     margin-right: 0%;
   }
   button{
     margin: 5px;
     color: #a4a883;
-    background-color: #d8dcba;
+    background-color: #403ea1 ;
     border: 0px;
-    margin-left: 20px;
+    margin-left: 1px;
   }
 
   a{
     text-decoration: none;
     color: #a4a883;
+  }
+
+  input, select{
+    
+    margin: 20px;
+    height: 48px;
+    width: 91%;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    outline: none;
+    color: #29132e;
+    background-color: #eeaecc;
+    border: none;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    box-shadow: 0 4px 8px 0 #15151533;
   }
 </style>
